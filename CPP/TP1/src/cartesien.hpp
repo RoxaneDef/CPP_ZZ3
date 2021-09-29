@@ -14,6 +14,8 @@ public:
     // Constructors
     Cartesien();
 
+    Cartesien(Cartesien &cartesien);
+
     Cartesien(double x, double y);
 
     Cartesien(Polaire &polaire);

@@ -14,6 +14,8 @@ public:
     // Constructors
     Polaire();
 
+    Polaire(Polaire &polaire);
+
     Polaire(double distance, double angle);
 
     Polaire(Cartesien &cartesien);
