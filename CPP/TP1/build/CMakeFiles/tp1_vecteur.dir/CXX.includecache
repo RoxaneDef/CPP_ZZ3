@@ -6,7 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/rodeflandr/ZZ3/CPP/TP1/src/main_vecteur.cpp
-cstdlib
--
+/home/rodeflandr/ZZ3/CPP/TP1/src/cartesien.cpp
+cartesien.hpp
+/home/rodeflandr/ZZ3/CPP/TP1/src/cartesien.hpp
+
+/home/rodeflandr/ZZ3/CPP/TP1/src/cartesien.hpp
+point.hpp
+/home/rodeflandr/ZZ3/CPP/TP1/src/point.hpp
+
+/home/rodeflandr/ZZ3/CPP/TP1/src/point.cpp
+point.hpp
+/home/rodeflandr/ZZ3/CPP/TP1/src/point.hpp
+
+/home/rodeflandr/ZZ3/CPP/TP1/src/point.hpp
+
+/home/rodeflandr/ZZ3/CPP/TP1/src/polaire.cpp
+polaire.hpp
+/home/rodeflandr/ZZ3/CPP/TP1/src/polaire.hpp
+
+/home/rodeflandr/ZZ3/CPP/TP1/src/polaire.hpp
+point.hpp
+/home/rodeflandr/ZZ3/CPP/TP1/src/point.hpp
 

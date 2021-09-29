@@ -4,22 +4,22 @@
 #include <sstream>
 #include <typeinfo>
 
-//#include <cartesien.hpp>
-//#include <polaire.hpp>
+#include <cartesien.hpp>
+#include <polaire.hpp>
 //#include <nuage.hpp>
 
 // Tests //-----------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------------------------ 1
-/*TEST_CASE ( "TP1_Polaire::Constructeur" ) {
- const double a = 12.0;
- const double d = 24.0;
+TEST_CASE ("TP1_Polaire::Constructeur") {
+    const double a = 12.0;
+    const double d = 24.0;
 
- Polaire p(a,d);
+    Polaire p(a, d);
 
- REQUIRE ( p.getAngle() == Approx(a) );
- REQUIRE ( p.getDistance() == Approx(d) );
-}*/
+    REQUIRE (p.getAngle() == Approx(a));
+    REQUIRE (p.getDistance() == Approx(d));
+}
 
 //------------------------------------------------------------------------------------------------ 2
 /*TEST_CASE ( "TP1_Polaire::ConstructeurDefaut" ) {

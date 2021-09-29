@@ -149,6 +149,39 @@ tp1_vecteur/fast:
 	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/build
 .PHONY : tp1_vecteur/fast
 
+src/cartesien.o: src/cartesien.cpp.o
+
+.PHONY : src/cartesien.o
+
+# target to build an object file
+src/cartesien.cpp.o:
+	$(MAKE) -f CMakeFiles/tp1_test.dir/build.make CMakeFiles/tp1_test.dir/src/cartesien.cpp.o
+	$(MAKE) -f CMakeFiles/tp1_point.dir/build.make CMakeFiles/tp1_point.dir/src/cartesien.cpp.o
+	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/cartesien.cpp.o
+.PHONY : src/cartesien.cpp.o
+
+src/cartesien.i: src/cartesien.cpp.i
+
+.PHONY : src/cartesien.i
+
+# target to preprocess a source file
+src/cartesien.cpp.i:
+	$(MAKE) -f CMakeFiles/tp1_test.dir/build.make CMakeFiles/tp1_test.dir/src/cartesien.cpp.i
+	$(MAKE) -f CMakeFiles/tp1_point.dir/build.make CMakeFiles/tp1_point.dir/src/cartesien.cpp.i
+	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/cartesien.cpp.i
+.PHONY : src/cartesien.cpp.i
+
+src/cartesien.s: src/cartesien.cpp.s
+
+.PHONY : src/cartesien.s
+
+# target to generate assembly for a file
+src/cartesien.cpp.s:
+	$(MAKE) -f CMakeFiles/tp1_test.dir/build.make CMakeFiles/tp1_test.dir/src/cartesien.cpp.s
+	$(MAKE) -f CMakeFiles/tp1_point.dir/build.make CMakeFiles/tp1_point.dir/src/cartesien.cpp.s
+	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/cartesien.cpp.s
+.PHONY : src/cartesien.cpp.s
+
 src/main_point.o: src/main_point.cpp.o
 
 .PHONY : src/main_point.o
@@ -202,6 +235,72 @@ src/main_vecteur.s: src/main_vecteur.cpp.s
 src/main_vecteur.cpp.s:
 	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/main_vecteur.cpp.s
 .PHONY : src/main_vecteur.cpp.s
+
+src/point.o: src/point.cpp.o
+
+.PHONY : src/point.o
+
+# target to build an object file
+src/point.cpp.o:
+	$(MAKE) -f CMakeFiles/tp1_test.dir/build.make CMakeFiles/tp1_test.dir/src/point.cpp.o
+	$(MAKE) -f CMakeFiles/tp1_point.dir/build.make CMakeFiles/tp1_point.dir/src/point.cpp.o
+	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/point.cpp.o
+.PHONY : src/point.cpp.o
+
+src/point.i: src/point.cpp.i
+
+.PHONY : src/point.i
+
+# target to preprocess a source file
+src/point.cpp.i:
+	$(MAKE) -f CMakeFiles/tp1_test.dir/build.make CMakeFiles/tp1_test.dir/src/point.cpp.i
+	$(MAKE) -f CMakeFiles/tp1_point.dir/build.make CMakeFiles/tp1_point.dir/src/point.cpp.i
+	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/point.cpp.i
+.PHONY : src/point.cpp.i
+
+src/point.s: src/point.cpp.s
+
+.PHONY : src/point.s
+
+# target to generate assembly for a file
+src/point.cpp.s:
+	$(MAKE) -f CMakeFiles/tp1_test.dir/build.make CMakeFiles/tp1_test.dir/src/point.cpp.s
+	$(MAKE) -f CMakeFiles/tp1_point.dir/build.make CMakeFiles/tp1_point.dir/src/point.cpp.s
+	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/point.cpp.s
+.PHONY : src/point.cpp.s
+
+src/polaire.o: src/polaire.cpp.o
+
+.PHONY : src/polaire.o
+
+# target to build an object file
+src/polaire.cpp.o:
+	$(MAKE) -f CMakeFiles/tp1_test.dir/build.make CMakeFiles/tp1_test.dir/src/polaire.cpp.o
+	$(MAKE) -f CMakeFiles/tp1_point.dir/build.make CMakeFiles/tp1_point.dir/src/polaire.cpp.o
+	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/polaire.cpp.o
+.PHONY : src/polaire.cpp.o
+
+src/polaire.i: src/polaire.cpp.i
+
+.PHONY : src/polaire.i
+
+# target to preprocess a source file
+src/polaire.cpp.i:
+	$(MAKE) -f CMakeFiles/tp1_test.dir/build.make CMakeFiles/tp1_test.dir/src/polaire.cpp.i
+	$(MAKE) -f CMakeFiles/tp1_point.dir/build.make CMakeFiles/tp1_point.dir/src/polaire.cpp.i
+	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/polaire.cpp.i
+.PHONY : src/polaire.cpp.i
+
+src/polaire.s: src/polaire.cpp.s
+
+.PHONY : src/polaire.s
+
+# target to generate assembly for a file
+src/polaire.cpp.s:
+	$(MAKE) -f CMakeFiles/tp1_test.dir/build.make CMakeFiles/tp1_test.dir/src/polaire.cpp.s
+	$(MAKE) -f CMakeFiles/tp1_point.dir/build.make CMakeFiles/tp1_point.dir/src/polaire.cpp.s
+	$(MAKE) -f CMakeFiles/tp1_vecteur.dir/build.make CMakeFiles/tp1_vecteur.dir/src/polaire.cpp.s
+.PHONY : src/polaire.cpp.s
 
 test/catch.o: test/catch.cpp.o
 
@@ -268,12 +367,21 @@ help:
 	@echo "... tp1_point"
 	@echo "... rebuild_cache"
 	@echo "... tp1_vecteur"
+	@echo "... src/cartesien.o"
+	@echo "... src/cartesien.i"
+	@echo "... src/cartesien.s"
 	@echo "... src/main_point.o"
 	@echo "... src/main_point.i"
 	@echo "... src/main_point.s"
 	@echo "... src/main_vecteur.o"
 	@echo "... src/main_vecteur.i"
 	@echo "... src/main_vecteur.s"
+	@echo "... src/point.o"
+	@echo "... src/point.i"
+	@echo "... src/point.s"
+	@echo "... src/polaire.o"
+	@echo "... src/polaire.i"
+	@echo "... src/polaire.s"
 	@echo "... test/catch.o"
 	@echo "... test/catch.i"
 	@echo "... test/catch.s"
