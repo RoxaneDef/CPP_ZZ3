@@ -6,15 +6,34 @@
 #define TP1_POLAIRE_H
 
 #include "point.hpp"
+#include "cartesien.hpp"
+#include <math.h>
 
 class Polaire : public Point {
 public:
+    // Constructors
+    Polaire();
+
     Polaire(double distance, double angle);
 
-private:
-    double getAngle();
+    Polaire(Cartesien &cartesien);
 
-    double getDistance();
+    // Getters
+    double getAngle() const;
+
+    double getDistance() const;
+
+    // Setters
+    void setAngle(double angle);
+
+    void setDistance(double distance);
+
+    // Overrided methods
+    std::ostream &afficher(std::ostream &flux) const override;
+
+    void convertir(Polaire &polaire) const override;
+
+    void convertir(Cartesien &cartesien) const override;
 };
 
 
