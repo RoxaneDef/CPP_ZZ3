@@ -14,8 +14,15 @@ public:
     // Constructors
     Nuage();
 
+    // Iterators
+    typedef std::vector<Point *>::const_iterator const_iterator;
+
     // Getters
     int size();
+
+    std::vector<Point *>::iterator begin();
+
+    std::vector<Point *>::iterator end();
 
     // Setters
 

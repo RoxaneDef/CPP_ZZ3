@@ -12,6 +12,14 @@ int Nuage::size() {
     return nuage.size();
 }
 
+std::vector<Point *>::iterator Nuage::begin() {
+    return nuage.begin();
+}
+
+std::vector<Point *>::iterator Nuage::end() {
+    return nuage.end();
+}
+
 // Setters
 
 // Others
