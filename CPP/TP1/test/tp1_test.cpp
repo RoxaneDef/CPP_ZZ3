@@ -313,6 +313,7 @@ Cartesien p4(x[3], y[3]);
 
 Nuage n;
 
+//----------------------------------------------------------------------------------------------- 20
 Cartesien barycentre(Nuage &nuage) {
     double x_barycentre = 0, y_barycentre = 0;
     Cartesien c;
@@ -333,7 +334,6 @@ Cartesien barycentre(Nuage &nuage) {
     return result;
 }
 
-//----------------------------------------------------------------------------------------------- 20
 TEST_CASE ("TP1_Nuage::Barycentre") {
     n.ajouter(p1);
     n.ajouter(p2);
@@ -347,20 +347,35 @@ TEST_CASE ("TP1_Nuage::Barycentre") {
 }
 
 //----------------------------------------------------------------------------------------------- 21
-/*TEST_CASE ("TP1_Nuage::BarycentreCartesien") {
+struct BarycentreCartesien {
+    Cartesien operator()(Nuage &nuage) {
+        return barycentre(nuage);
+    }
+};
+
+TEST_CASE ("TP1_Nuage::BarycentreCartesien") {
     Cartesien b = BarycentreCartesien()(n);
 
     REQUIRE (b.getX() == Approx((x[0] + x[1] + x[2] + x[3]) / 4));
     REQUIRE (b.getY() == Approx((y[0] + y[1] + y[2] + y[3]) / 4));
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 22
-/*TEST_CASE ( "TP1_Nuage::BarycentrePolaire" ) {
- Polaire p(Cartesien((x[0]+x[1]+x[2]+x[3])/4,(y[0]+y[1]+y[2]+y[3])/4));
- Polaire b = BarycentrePolaire()(n);
+struct BarycentrePolaire {
+    Polaire p;
 
- REQUIRE ( b.getAngle() == Approx(p.getAngle()) );
- REQUIRE ( b.getDistance() == Approx(p.getDistance()) );
-}*/
+    Polaire operator()(Nuage &nuage) {
+        barycentre(nuage).convertir(p);
+        return p;
+    }
+};
+
+TEST_CASE ("TP1_Nuage::BarycentrePolaire") {
+    Polaire p(Cartesien((x[0] + x[1] + x[2] + x[3]) / 4, (y[0] + y[1] + y[2] + y[3]) / 4));
+    Polaire b = BarycentrePolaire()(n);
+
+    REQUIRE (b.getAngle() == Approx(p.getAngle()));
+    REQUIRE (b.getDistance() == Approx(p.getDistance()));
+}
 
 // Fin //-------------------------------------------------------------------------------------------

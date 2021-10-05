@@ -11,7 +11,7 @@ Cartesien::Cartesien(Cartesien const &cartesien) : Cartesien(cartesien.getX(), c
 
 Cartesien::Cartesien(double x, double y) : Point(x, y) {}
 
-Cartesien::Cartesien(Polaire &polaire) {
+Cartesien::Cartesien(Polaire const &polaire) {
     polaire.convertir(*this);
 }
 

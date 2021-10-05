@@ -7,11 +7,11 @@
 // Constructors
 Polaire::Polaire() : Polaire(0, 0) {}
 
-Polaire::Polaire(Polaire &polaire) : Polaire(polaire.getAngle(), polaire.getDistance()) {}
+Polaire::Polaire(Polaire const &polaire) : Polaire(polaire.getAngle(), polaire.getDistance()) {}
 
 Polaire::Polaire(double distance, double angle) : Point(distance, angle) {}
 
-Polaire::Polaire(Cartesien &cartesien) : Polaire() {
+Polaire::Polaire(Cartesien const &cartesien) : Polaire() {
     cartesien.convertir(*this);
 }
 

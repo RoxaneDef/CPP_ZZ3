@@ -14,11 +14,11 @@ public:
     // Constructors
     Polaire();
 
-    Polaire(Polaire &polaire);
+    Polaire(Polaire const &polaire);
 
     Polaire(double distance, double angle);
 
-    Polaire(Cartesien &cartesien);
+    Polaire(Cartesien const &cartesien);
 
     // Getters
     double getAngle() const;

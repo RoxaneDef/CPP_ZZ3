@@ -19,7 +19,7 @@ public:
 
     Cartesien(double x, double y);
 
-    Cartesien(Polaire &polaire);
+    Cartesien(Polaire const &polaire);
 
     // Getters
     double getX() const;
