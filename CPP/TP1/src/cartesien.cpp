@@ -7,7 +7,7 @@
 // Constructors
 Cartesien::Cartesien() : Cartesien(0, 0) {}
 
-Cartesien::Cartesien(Cartesien &cartesien) : Cartesien(cartesien.getX(), cartesien.getY()) {}
+Cartesien::Cartesien(Cartesien const &cartesien) : Cartesien(cartesien.getX(), cartesien.getY()) {}
 
 Cartesien::Cartesien(double x, double y) : Point(x, y) {}
 

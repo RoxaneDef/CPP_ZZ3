@@ -313,17 +313,13 @@ Cartesien p4(x[3], y[3]);
 
 Nuage n;
 
-Cartesien& barycentre(Nuage &nuage) {
+Cartesien barycentre(Nuage &nuage) {
     double x_barycentre = 0, y_barycentre = 0;
     Cartesien c;
     Nuage::const_iterator it = nuage.begin();
 
     while (it != nuage.end()) {
-        if (typeid(*(it++)) == typeid(Polaire)) {
-            c.convertir((Polaire &) *(it++));
-        } else {
-            c.convertir((Cartesien &) *(it++));
-        }
+        (*it++)->convertir(c);
 
         x_barycentre += c.getX();
         y_barycentre += c.getY();
@@ -351,11 +347,11 @@ TEST_CASE ("TP1_Nuage::Barycentre") {
 }
 
 //----------------------------------------------------------------------------------------------- 21
-/*TEST_CASE ( "TP1_Nuage::BarycentreCartesien" ) {
- Cartesien b = BarycentreCartesien()(n);
+/*TEST_CASE ("TP1_Nuage::BarycentreCartesien") {
+    Cartesien b = BarycentreCartesien()(n);
 
- REQUIRE ( b.getX() == Approx((x[0]+x[1]+x[2]+x[3])/4) );
- REQUIRE ( b.getY() == Approx((y[0]+y[1]+y[2]+y[3])/4) );
+    REQUIRE (b.getX() == Approx((x[0] + x[1] + x[2] + x[3]) / 4));
+    REQUIRE (b.getY() == Approx((y[0] + y[1] + y[2] + y[3]) / 4));
 }*/
 
 //----------------------------------------------------------------------------------------------- 22

@@ -8,6 +8,7 @@
 #include <iostream>
 
 class Polaire;
+
 class Cartesien;
 
 class Point {

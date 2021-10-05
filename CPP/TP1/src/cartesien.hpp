@@ -15,7 +15,7 @@ public:
     // Constructors
     Cartesien();
 
-    Cartesien(Cartesien &cartesien);
+    Cartesien(Cartesien const &cartesien);
 
     Cartesien(double x, double y);
 
