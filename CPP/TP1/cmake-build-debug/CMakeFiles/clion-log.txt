@@ -1,0 +1,83 @@
+"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\roxan\AppData\Local\Packages\TheDebianProject.DebianGNULinux_76v4gfsz19hv4\LocalState\rootfs\home\rodeflandr\ZZ3\CPP\CPP\TP1
+-- The C compiler identification is GNU 6.3.0
+CMake Error at C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:683 (file):
+  file STRINGS file
+  "C:/Users/roxan/AppData/Local/Packages/TheDebianProject.DebianGNULinux_76v4gfsz19hv4/LocalState/rootfs/home/rodeflandr/ZZ3/CPP/CPP/TP1/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.exe"
+  cannot be read.
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:38 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCXXCompiler.cmake:111 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:767 (file):
+  file failed to open for reading (Invalid argument):
+
+    C:/Users/roxan/AppData/Local/Packages/TheDebianProject.DebianGNULinux_76v4gfsz19hv4/LocalState/rootfs/home/rodeflandr/ZZ3/CPP/CPP/TP1/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.exe
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:38 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCXXCompiler.cmake:111 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:770 (string):
+  string begin index: 1 is out of range 0 - 0
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:38 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCXXCompiler.cmake:111 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:778 (math):
+  math cannot parse the expression: " * 16 + ": syntax error, unexpected
+  exp_TIMES (2).
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:38 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCXXCompiler.cmake:111 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error at C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:780 (file):
+  file failed to open for reading (Invalid argument):
+
+    C:/Users/roxan/AppData/Local/Packages/TheDebianProject.DebianGNULinux_76v4gfsz19hv4/LocalState/rootfs/home/rodeflandr/ZZ3/CPP/CPP/TP1/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.exe
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerId.cmake:38 (CMAKE_DETERMINE_COMPILER_ID_CHECK)
+  C:/Program Files/JetBrains/CLion 2020.2.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCXXCompiler.cmake:111 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+-- The CXX compiler identification is GNU 6.3.0
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - not found
+-- Found Threads: TRUE  
+-- Performing Test COMPILER_SUPPORTS_CPP14
+-- Performing Test COMPILER_SUPPORTS_CPP14 - Success
+-- Performing Test COMPILER_SUPPORTS_CPP1Y
+-- Performing Test COMPILER_SUPPORTS_CPP1Y - Success
+-- Performing Test COMPILER_SUPPORTS_CPP11
+-- Performing Test COMPILER_SUPPORTS_CPP11 - Success
+-- Performing Test COMPILER_SUPPORTS_CPP0X
+-- Performing Test COMPILER_SUPPORTS_CPP0X - Success
+-- Compiler flags: -std=gnu++14 -Wall -pedantic 
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/roxan/AppData/Local/Packages/TheDebianProject.DebianGNULinux_76v4gfsz19hv4/LocalState/rootfs/home/rodeflandr/ZZ3/CPP/CPP/TP1/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/roxan/AppData/Local/Packages/TheDebianProject.DebianGNULinux_76v4gfsz19hv4/LocalState/rootfs/home/rodeflandr/ZZ3/CPP/CPP/TP1/cmake-build-debug/CMakeFiles/CMakeError.log".
+
+CMake Error:
+  --------------------------------------------------------------------------------------------
+  Antivirus software might have incorrectly identified files generated by CMake as malicious.
+  To workaround this problem, please exclude the project dir and 'C:\MinGW' from the scanning.
+  --------------------------------------------------------------------------------------------

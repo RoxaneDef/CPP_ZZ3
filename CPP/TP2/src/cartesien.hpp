@@ -7,7 +7,6 @@
 
 #include "point.hpp"
 #include "polaire.hpp"
-#include "nuage.hpp"
 #include <math.h>
 
 class Cartesien : public Point {

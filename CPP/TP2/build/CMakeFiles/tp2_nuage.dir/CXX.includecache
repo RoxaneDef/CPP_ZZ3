@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/cartesien.cpp
+cartesien.hpp
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/cartesien.hpp
+
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/cartesien.hpp
+point.hpp
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/point.hpp
+polaire.hpp
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/polaire.hpp
+nuage.hpp
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/nuage.hpp
+math.h
+-
+
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/main_nuage.cpp
+cstdlib
+-
+
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/point.cpp
+point.hpp
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/point.hpp
+
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/point.hpp
+iostream
+-
+
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/polaire.cpp
+polaire.hpp
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/polaire.hpp
+
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/polaire.hpp
+point.hpp
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/point.hpp
+cartesien.hpp
+/home/rodeflandr/ZZ3/CPP/CPP/TP2/src/cartesien.hpp
+math.h
+-
+
