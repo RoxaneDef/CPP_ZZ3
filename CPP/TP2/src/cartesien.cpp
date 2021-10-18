@@ -41,7 +41,11 @@ std::ostream &Cartesien::afficher(std::ostream &flux) const {
 }
 
 void Cartesien::convertir(Polaire &polaire) const {
-    polaire.setPremiereCoordonnee((2 * atan(getY() / (getX() + sqrt(pow(getX(), 2) + pow(getY(), 2))))) * 180 / M_PI);
+    if (getX() != 0 && getY() != 0) {
+        polaire.setPremiereCoordonnee((2 * atan(getY() / (getX() + sqrt(pow(getX(), 2) + pow(getY(), 2))))) * 180 / M_PI);
+    } else {
+        polaire.setPremiereCoordonnee(0);
+    }
     polaire.setDeuxiemeCoordonnee(sqrt(pow(getX(), 2) + pow(getY(), 2)));
 }
 

@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <iostream>
+#include "cartesien.hpp"
 
 template<typename T>
 class Nuage {
