@@ -379,3 +379,15 @@ TEST_CASE ("TP1_Nuage::BarycentrePolaire") {
 }
 
 // Fin //-------------------------------------------------------------------------------------------
+
+struct BarycentrePolaire {
+    Polaire p;
+    int i;
+
+    Polaire operator()(Nuage &nuage, int &a) {
+        barycentre(nuage).convertir(p);
+        i++;
+        a = i;
+        return p;
+    }
+};
