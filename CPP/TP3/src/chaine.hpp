@@ -48,14 +48,14 @@ std::string chaine(Args &&... args) {
 }
 
 // Test n°4
-template<typename ...Args>
-std::string chaine(const std::tuple<Args...> &t) {
-    return chaine_bis(t, std::make_index_sequence<sizeof...(Args)>());
+template<typename T, size_t ...Is>
+std::string chaine_bis(T &t, std::index_sequence<Is...>) {
+    return chaine(std::get<Is>(t)...);
 }
 
-template<typename T, size_t ...Is>
-std::string chaine_bis(const T &t, std::index_sequence<Is...>) {
-    return chaine(std::get<Is>(t)...);
+template<typename ...Args>
+std::string chaine(std::tuple<Args...> &t) {
+    return chaine_bis(t, std::make_index_sequence<sizeof...(Args)>());
 }
 
 #endif //TP3_CHAINE_H
