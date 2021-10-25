@@ -10,10 +10,10 @@
 #include <cstdlib>
 #include <cxxabi.h>
 
-inline std::string demangle(const std::string & name) {
+inline std::string demangle(const std::string &name) {
     int status = -4;
-    char * decoded = abi::__cxa_demangle(name.c_str(),0,0,&status);
-    std::string result = (status==0 ? decoded : name.c_str());
+    char *decoded = abi::__cxa_demangle(name.c_str(), 0, 0, &status);
+    std::string result = (status == 0 ? decoded : name.c_str());
 
     free(decoded);
     return result;
