@@ -18,7 +18,7 @@ constexpr bool is_tuple = false;
 
 // Variable template
 template<typename ...Ts>
-constexpr bool is_tuple<std::tuple<Ts...>> = true;
+constexpr bool is_tuple<std::tuple < Ts...>> = true;
 
 // Early declaration
 template<typename ...Args>
