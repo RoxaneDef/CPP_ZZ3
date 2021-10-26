@@ -14,12 +14,12 @@
 
 // Methode par defaut qui renvoit une exception - TEST n°1
 template<typename T>
-std::string chaine(T &array) {
+std::string chaine(T const &array) {
     throw ExceptionChaine(demangle(typeid(T).name()));
 }
 
 // Specialisation de la methode pour un std::string - TEST n°2
-std::string chaine(std::string str) {
+std::string const &chaine(std::string const &str) {
     return str;
 }
 
@@ -39,7 +39,7 @@ std::string chaine(double val) {
 
 // Specialisation de la methode pour tout type et nombre de parametres - TEST n°3
 template<typename ...Args>
-std::string chaine(Args &&... args) {
+std::string chaine(Args const &... args) {
     std::stringstream ss;
 
     ((ss << chaine(args) << " "), ...);
@@ -49,13 +49,13 @@ std::string chaine(Args &&... args) {
 
 // Test n°4
 template<typename T, size_t ...Is>
-std::string chaine_bis(T &t, std::index_sequence<Is...>) {
+std::string chaine(T const &t, std::index_sequence<Is...>) {
     return chaine(std::get<Is>(t)...);
 }
 
 template<typename ...Args>
-std::string chaine(std::tuple<Args...> &t) {
-    return chaine_bis(t, std::make_index_sequence<sizeof...(Args)>());
+std::string chaine(const std::tuple<Args...> &t) {
+    return chaine(t, std::make_index_sequence<sizeof...(Args)>());
 }
 
 #endif //TP3_CHAINE_H
