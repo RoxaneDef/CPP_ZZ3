@@ -12,10 +12,26 @@
 #include "exception.hpp"
 #include "demangle.hpp"
 
+// Variable template
+template<typename T>
+constexpr bool is_tuple = false;
+
+// Variable template
+template<typename ...Ts>
+constexpr bool is_tuple<std::tuple<Ts...>> = true;
+
+// Early declaration
+template<typename ...Args>
+std::string chaine_tuple(const std::tuple<Args...> &t);
+
 // Methode par defaut qui renvoit une exception - TEST n°1
 template<typename T>
 std::string chaine(T const &array) {
-    throw ExceptionChaine(demangle(typeid(T).name()));
+    if constexpr (is_tuple<T>) {
+        return chaine_tuple(array);
+    } else {
+        throw ExceptionChaine(demangle(typeid(T).name()));
+    }
 }
 
 // Specialisation de la methode pour un std::string - TEST n°2
@@ -49,13 +65,13 @@ std::string chaine(Args const &... args) {
 
 // Test n°4
 template<typename T, size_t ...Is>
-std::string chaine(T const &t, std::index_sequence<Is...>) {
+std::string chaine_bis(T const &t, std::index_sequence<Is...>) {
     return chaine(std::get<Is>(t)...);
 }
 
 template<typename ...Args>
-std::string chaine(const std::tuple<Args...> &t) {
-    return chaine(t, std::make_index_sequence<sizeof...(Args)>());
+std::string chaine_tuple(const std::tuple<Args...> &t) {
+    return chaine_bis(t, std::make_index_sequence<sizeof...(Args)>());
 }
 
 #endif //TP3_CHAINE_H
