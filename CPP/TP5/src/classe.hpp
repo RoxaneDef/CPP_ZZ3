@@ -5,6 +5,7 @@
 #ifndef CPP_CLASSE_HPP
 #define CPP_CLASSE_HPP
 
+#include "valeur.hpp"
 
 class Classe {
 public:
