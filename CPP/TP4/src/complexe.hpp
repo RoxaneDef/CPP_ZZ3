@@ -22,7 +22,7 @@ using complexe_t = Mouchard<Complexe>;
 
 //-----------------------------------------------------------------------------------------operator+
 inline complexe_t operator+(const complexe_t &a, const complexe_t &b) {
-    return complexe_t(a.reel + b.reel, a.imaginaire + b.imaginaire);
+    return complexe_t(a.reel + b.reel, a.imaginaire + b.imaginaire);    // 1 construction ad hoc
 }
 
 //-----------------------------------------------------------------------------------------operator*

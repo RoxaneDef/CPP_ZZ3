@@ -61,18 +61,19 @@ inline std::ostream &operator<<(std::ostream &flux, const Vecteur &v) {
 
 //-----------------------------------------------------------------------------------------operator+
 inline Vecteur operator+(const Vecteur &v1, const Vecteur &v2) {
-    Vecteur v;
+    Vecteur v;  // 10 constructions par defaut
 
-    for (unsigned i = 0; i < v1.getTaille(); ++i) v[i] = v1[i] + v2[i];
+    // v1[i] + v2[i] : 1 construction ad hoc
+    for (unsigned i = 0; i < v1.getTaille(); ++i) v[i] = v1[i] + v2[i]; // taille_ constructions ad hoc + taille_ affectations par mouvement
 
     return v;
 }
 
 //-----------------------------------------------------------------------------------------operator*
 inline Vecteur operator*(const Vecteur &v1, const Vecteur &v2) {
-    Vecteur v;
+    Vecteur v; // 10 constructions par defaut
 
-    for (unsigned i = 0; i < v1.getTaille(); ++i) v[i] = v1[i] * v2[i];
+    for (unsigned i = 0; i < v1.getTaille(); ++i) v[i] = v1[i] * v2[i];  // taille_ constructions ad hoc + taille_ affectations par mouvement
 
     return v;
 }
