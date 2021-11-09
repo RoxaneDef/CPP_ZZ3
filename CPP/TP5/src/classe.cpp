@@ -13,3 +13,11 @@ double Classe::getBorneInf() { return borneInf; }
 double Classe::getBorneSup() { return borneSup; }
 
 int Classe::getQuantite() { return quantite; }
+
+void Classe::setBorneInf(double borneInf_) { borneInf = borneInf_; }
+
+void Classe::setBorneSup(double borneSup_) { borneSup = borneSup_; }
+
+void Classe::setQuantite(int quantite_) { quantite = quantite_; }
+
+void Classe::ajouter() { quantite++; }

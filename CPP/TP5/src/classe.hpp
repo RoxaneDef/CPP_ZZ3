@@ -11,12 +11,20 @@ public:
     Classe();
 
     Classe(double borneInf_, double borneSup_);
-    
+
     double getBorneInf();
 
     double getBorneSup();
 
     int getQuantite();
+
+    void setBorneInf(double borneInf_);
+
+    void setBorneSup(double borneSup_);
+
+    void setQuantite(int quantite_);
+
+    void ajouter();
 
 private:
     double borneInf;
