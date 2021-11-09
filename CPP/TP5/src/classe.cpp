@@ -8,11 +8,11 @@ Classe::Classe() : Classe(0.0, 0.0) {}
 
 Classe::Classe(double borneInf_, double borneSup_) : borneInf(borneInf_), borneSup(borneSup_), quantite(0) {}
 
-double Classe::getBorneInf() { return borneInf; }
+double Classe::getBorneInf() const { return borneInf; }
 
-double Classe::getBorneSup() { return borneSup; }
+double Classe::getBorneSup() const { return borneSup; }
 
-int Classe::getQuantite() { return quantite; }
+int Classe::getQuantite() const { return quantite; }
 
 void Classe::setBorneInf(double borneInf_) { borneInf = borneInf_; }
 

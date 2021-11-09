@@ -37,14 +37,15 @@ set(ZZ3_HEADERS
         src/classe.hpp
         src/echantillon.hpp
         src/valeur.hpp
+        src/histogramme.hpp
         #src/comparateur.hpp
-        #src/histogramme.hpp
         )
 
 set(ZZ3_SOURCES
         src/classe.cpp
         src/echantillon.cpp
         src/valeur.cpp
+        src/histogramme.cpp
         )
 
 set(ZZ3_HEADERS_TEST

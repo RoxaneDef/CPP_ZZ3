@@ -12,11 +12,11 @@ public:
 
     Classe(double borneInf_, double borneSup_);
 
-    double getBorneInf();
+    double getBorneInf() const;
 
-    double getBorneSup();
+    double getBorneSup() const;
 
-    int getQuantite();
+    int getQuantite() const;
 
     void setBorneInf(double borneInf_);
 
