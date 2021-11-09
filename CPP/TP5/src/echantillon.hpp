@@ -5,9 +5,11 @@
 #ifndef CPP_ECHANTILLON_HPP
 #define CPP_ECHANTILLON_HPP
 
-#include "vector"
-#include "valeur.hpp"
 #include <algorithm>
+#include <stdexcept>
+#include <vector>
+
+#include "valeur.hpp"
 
 class Echantillon {
 public:
@@ -22,6 +24,8 @@ public:
     Valeur getMinimum();
 
     Valeur getMaximum();
+
+    Valeur getValeur(int indice);
 
 private:
     std::vector <Valeur> vect;
