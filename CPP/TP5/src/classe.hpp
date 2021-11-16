@@ -27,6 +27,10 @@ public:
 
     void ajouter();
 
+    friend bool operator<(const Classe &cla1, const Classe &cal2);
+
+    friend bool operator>(const Classe &cla1, const Classe &cal2);
+
 private:
     double borneInf;
     double borneSup;

@@ -45,7 +45,6 @@ set(ZZ3_SOURCES
         src/classe.cpp
         src/echantillon.cpp
         src/valeur.cpp
-        src/histogramme.cpp
         )
 
 set(ZZ3_HEADERS_TEST

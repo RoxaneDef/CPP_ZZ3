@@ -21,3 +21,8 @@ void Classe::setBorneSup(double borneSup_) { borneSup = borneSup_; }
 void Classe::setQuantite(int quantite_) { quantite = quantite_; }
 
 void Classe::ajouter() { quantite++; }
+
+// Fonction de comparaison de deux valeurs
+bool operator<(const Classe &cla1, const Classe &cla2) { return cla1.getBorneInf() < cla2.getBorneInf(); }
+
+bool operator>(const Classe &cla1, const Classe &cla2) { return cla1.getBorneSup() > cla2.getBorneSup(); }

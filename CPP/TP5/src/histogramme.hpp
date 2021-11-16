@@ -5,30 +5,33 @@
 #ifndef CPP_HISTOGRAMME_HPP
 #define CPP_HISTOGRAMME_HPP
 
-#include <vector>
+#include <set>
 #include <iostream>
 
 #include "classe.hpp"
 #include "echantillon.hpp"
 #include "valeur.hpp"
 
-class Histo {
+template<typename T = std::less<Classe>>
+class Histogramme {
 public:
-    Histo();
+    Histogramme();
 
-    Histo(double borneInf, double borneSup, int nbrClasse);
+    Histogramme(double borneInf, double borneSup, int nbrClasse);
 
-    std::vector <Classe> getClasses();
+    std::set <Classe, T> getClasses();
 
     void ajouter(Classe classe_);
 
     void ajouter(Echantillon echantillon_);
 
-    std::vector<Classe>::iterator getIteratorToCorrectClasse(Valeur val);
+    typename std::set<Classe, T>::iterator getIteratorToCorrectClasse(Valeur val);
 
 private:
-    std::vector <Classe> vect;
+    std::set <Classe, T> s;
 };
 
+
+#include "histogramme.impl.hpp"
 
 #endif //CPP_HISTOGRAMME_HPP
