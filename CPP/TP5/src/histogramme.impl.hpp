@@ -17,6 +17,15 @@ template<typename T>
 std::set <Classe, T> Histogramme<T>::getClasses() { return s; }
 
 template<typename T>
+void Histogramme<T>::ajouter(double double_) {
+    typename std::set<Classe, T>::iterator it = getIteratorToCorrectClasse(Valeur(double_));
+    Classe newClasse = (*it);
+    s.erase(it);
+    newClasse.ajouter();
+    ajouter(newClasse);
+}
+
+template<typename T>
 void Histogramme<T>::ajouter(Classe classe_) { s.insert(classe_); }
 
 template<typename T>
@@ -35,7 +44,7 @@ typename std::set<Classe, T>::iterator Histogramme<T>::getIteratorToCorrectClass
     typename std::set<Classe, T>::iterator it_;
 
     for (typename std::set<Classe, T>::iterator it = s.begin(); it != s.end(); ++it) {
-        if ((*it).getBorneInf() <= val.getNombre() && (*it).getBorneSup() >= val.getNombre()) {
+        if ((*it).getBorneInf() <= val.getNombre() && (*it).getBorneSup() > val.getNombre()) {
             it_ = it;
         }
     }

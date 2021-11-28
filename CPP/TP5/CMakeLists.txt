@@ -38,7 +38,7 @@ set(ZZ3_HEADERS
         src/echantillon.hpp
         src/valeur.hpp
         src/histogramme.hpp
-        #src/comparateur.hpp
+        src/comparateur.hpp
         )
 
 set(ZZ3_SOURCES

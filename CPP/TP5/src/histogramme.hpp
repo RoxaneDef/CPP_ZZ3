@@ -21,6 +21,8 @@ public:
 
     std::set <Classe, T> getClasses();
 
+    void ajouter(double double_);
+
     void ajouter(Classe classe_);
 
     void ajouter(Echantillon echantillon_);
@@ -30,7 +32,6 @@ public:
 private:
     std::set <Classe, T> s;
 };
-
 
 #include "histogramme.impl.hpp"
 

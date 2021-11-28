@@ -6,7 +6,6 @@
 #define TP3_EXCEPTION_H
 
 #include <exception>
-#include <typeinfo>
 
 class ExceptionChaine : public std::exception {
 public:

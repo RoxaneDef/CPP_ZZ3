@@ -2,7 +2,8 @@
 // Created by roxan on 10/07/2021.
 //
 
-#include "vecteur.hpp"
+#ifndef TP1_VECTEUR_HPP
+#define TP1_VECTEUR_HPP
 
 /* Début des méthodes nécessaires pour forme de COPLIEN */
 Vecteur::Vecteur() {}
@@ -61,3 +62,5 @@ void Vecteur::afficher() {
     std::cout << std::endl;
 }
  */
+
+#endif
